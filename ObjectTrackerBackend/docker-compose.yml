@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  objecttrackerbackend:
+    image: ${DOCKER_REGISTRY-}objecttrackerbackend
+    ports:
+      - "5000:8081"
+      - "5001:443"
+    build:
+      context: .
+      dockerfile: ObjectTrackerBackend/Dockerfile
+  mongo:
+    image: mongo:latest
+    container_name: mongodb-container
+    command: mongod --auth --bind_ip_all
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    environment:
+      MONGO_INITDB_DATABASE: UserDB
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: Test123!
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+volumes:
+  mongodb-data:
+    driver: local  

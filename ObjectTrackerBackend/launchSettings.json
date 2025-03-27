@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Docker Compose": {
+        "commandName": "DockerCompose",
+        "commandVersion": "1.0",
+        "sslPort": 5001,
+        "httpPort": 5000,
+        "useSSL": true,
+        "serviceActions": {
+            "objecttrackerbackend": "StartDebugging"
+        }
+    }
+  }
+}
