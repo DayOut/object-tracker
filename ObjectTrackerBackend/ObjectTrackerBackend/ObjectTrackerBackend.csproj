@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\TokenServiceRepository\TokenServiceRepository.csproj" />
+    <ProjectReference Include="..\TokenServiceRepository\TokenServiceRepository.csproj" />
     <ProjectReference Include="..\TrackedObjectServiceRepository\TrackedObjectServiceRepository.csproj" />
     <ProjectReference Include="..\UserServiceRepository\UserServiceRepository.csproj" />
   </ItemGroup>

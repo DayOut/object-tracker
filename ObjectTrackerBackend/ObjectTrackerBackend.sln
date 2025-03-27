@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserServiceRepository", "Us
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackedObjectServiceRepository", "TrackedObjectServiceRepository\TrackedObjectServiceRepository.csproj", "{3A164576-9051-4EA3-A322-FA256DD43160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenServiceRepository", "..\TokenServiceRepository\TokenServiceRepository.csproj", "{533A1953-B1D6-419D-8759-32F3D2DD1594}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenServiceRepository", "TokenServiceRepository\TokenServiceRepository.csproj", "{D3CEE317-014F-4A15-B001-47A901F5A264}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{3A164576-9051-4EA3-A322-FA256DD43160}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A164576-9051-4EA3-A322-FA256DD43160}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A164576-9051-4EA3-A322-FA256DD43160}.Release|Any CPU.Build.0 = Release|Any CPU
-		{533A1953-B1D6-419D-8759-32F3D2DD1594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{533A1953-B1D6-419D-8759-32F3D2DD1594}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{533A1953-B1D6-419D-8759-32F3D2DD1594}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{533A1953-B1D6-419D-8759-32F3D2DD1594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3CEE317-014F-4A15-B001-47A901F5A264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CEE317-014F-4A15-B001-47A901F5A264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CEE317-014F-4A15-B001-47A901F5A264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CEE317-014F-4A15-B001-47A901F5A264}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
+using TokenServiceRepository.Interface;
 using UserServiceRepository.Interface;
 using UserServiceRepository.Model;
 
@@ -14,6 +15,21 @@ namespace ObjectTrackerBackend.Controllers
         public UserController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
+        }
+
+        [HttpGet("createTestUser")]
+        public async Task<IActionResult> isTokenValid()
+        {
+            var user = new User() { 
+                Id = "12345",
+                Name = "admin",
+                Username = "admin",
+                Email = "admin",
+                PhoneNumber = "1234567890",
+                Password = "admin",
+            };
+            var response = await _userRepository.CreateAsync(user);
+            return CreatedAtRoute(nameof(GetUserByIdAsync), new { id = response.Id }, response);
         }
 
         [HttpPost]

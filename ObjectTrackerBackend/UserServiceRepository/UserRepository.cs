@@ -32,12 +32,13 @@ namespace UserServiceRepository
         public async Task<IEnumerable<User>> GetAllAsync(int offset, int fetch)
         {
             var filter = Builders<User>.Filter.Empty;
-
-            return _collection
+            var res = _collection
                 .Find(filter)
                 .Skip(offset)
                 .Limit(fetch)
                 .ToList();
+            int a = 1;
+            return res;
         }
 
         public async Task<User> GetByIdAsync(string id)
